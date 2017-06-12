@@ -248,7 +248,7 @@ function iniciar() {
 
 function shuf() {
 	var arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
-	shuffle(arr);
+	shuffle2(arr);
 	
 	var html = "";
 	for (var i=1;i<=16;i++) {
@@ -257,13 +257,13 @@ function shuf() {
 
 	$(".player").html(html);
 }
-
+/*
 function shuffle(a) {
     for (let i = a.length; i; i--) {
         let j = Math.floor(Math.random() * i);
         [a[i - 1], a[j]] = [a[j], a[i - 1]];
     }
-}
+}*/
 
 function getValidaPar(x,y) {
 	var x = x.replace('x','');
@@ -276,4 +276,23 @@ function getValidaPar(x,y) {
 	else if (parseInt(x) == 6 && parseInt(y) == 3) { return true; }
 
 	return false;
+}
+
+function shuffle2(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
 }

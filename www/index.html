@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>SQM</title>
+  <meta name="description" content="SQM">
+  <meta name="author" content="COW">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/guantefont.css" />
+  <link rel="stylesheet" type="text/css" href="css/sqm.css?v=5" />
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/jquery.rut.min.js"></script> 
+  <script src="js/sqm.js?v=5"></script> 
+</head>
+
+<body>
+  <div class="web">
+
+	<div class="comenzar" style="display: none;">
+		<div class="comenzar-in">
+			<div class="comenzar-in-1">
+		        <img src="images/banner_izq_01.png" />
+		        <h2 class="f1">¡Sumérgete<br />en la aventura!</h2>
+		        <h3 class="f1">Participa por una</h3>
+		        <!--<img src="images/logo_gopro.png" />-->
+			</div>
+			
+			<div class="comenzar-in-2 f2">
+			<br /><br />
+			Regístrate, juega al memorice y estarás participando por una GoPro.
+			<br /><br />
+			GO GO GO
+      <br /><br />
+			<a href="#" class="button-guante boton_comenzar">PARTICIPAR</a>
+			</div>
+		</div>
+ 	 	
+ 	 	<div class="c"></div>
+	</div>
+
+    <!-- CAPA MENSAJE PERDEDOR Y GANADOR -->
+    <div class="message" style="display:none;">
+      <div class="in">
+        <div id="game_loser" style="display:none;">
+          <img class="icon" src="images/icon.bad.png" />
+          <br />
+          <h1 class="no f1">NOOO!</h1>
+          <h2 class="sub f1">FALLASTE 2 VECES</h2>
+          <a href="#" class="f1 button-guante" id="back_for_loser">VOLVER A JUGAR</a>
+        </div>
+        <div id="game_winner" style="display: none;">
+          <img class="icon" src="images/icon.win.png" />
+          <br />
+          <h1 class="no f1">¡GENIAL!</h1>
+          <h2 class="sub f1">¡¡GANASTE!!</h2>
+          <a href="#" class="f1 button-guante seguir_reload">SEGUIR JUGANDO</a>
+        </div>
+      </div>
+    </div>
+    <!-- CAPA COVER  -->
+    <div class="cover" style="display:none;"></div>
+    <aside>
+      <div class="sombron" style="display:none;"></div>
+      <div class="side">
+        <!--<img src="images/logo.png" />-->
+        <!--
+        <img src="images/banner_izq_01.png" />
+        
+        <h2 class="f1">¡Sumérgete<br />en la aventura!</h2>
+        <h3 class="f1">Participa por una</h3>
+        <img src="images/logo_gopro.png" />
+        <p class="f2">
+          Con Guante school prepárate para vivir y registrar todas las aventuras que tendrás este año en el colegio.
+          <br /><br />
+          Regístrate, juega al memorice y estarás participando por una GoPro.
+          <br /><br />
+          GO GO GO!
+        </p>
+        -->
+
+        <!--<div class="rrss">
+          <a href="https://www.facebook.com/zapatosGuante/" target="_blank"><img src="images/icon.fb.png" /></a> 
+          <a href="https://www.instagram.com/zapatosguante/" target="_blank"><img src="images/icon.ig.png" /></a>
+        </div>
+
+        -->
+      </div>
+    </aside>
+
+
+    <div class="content">
+      <div class="sombra" style="display:none;"></div>
+      <div class="locker" style="display:none;"></div>
+      <div class="thecollect" style="display:none;">
+        <h1 class="f1">COLECCIÓN</h1>
+        <img src="images/posx1.png" class="coleccion" />
+        <img src="images/posx3.png" class="coleccion" />
+        <img src="images/posx5.png" class="coleccion" />
+        <img src="images/posx7.png" class="coleccion" />
+        <img src="images/posx9.png" class="coleccion" />
+        <img src="images/posx11.png" class="coleccion" />
+        <img src="images/posx13.png" class="coleccion" />
+        <img src="images/posx15.png" class="coleccion" />
+        <div class="c"></div><br><div align="center">
+          <a href="#" class="button-guante boton_regresa">REGRESAR</a>
+        </div>
+      </div>
+      <div class="game">
+        <h1 class="f1">Memorice</h1>
+        <h2 class="f1">ENCUENTRA EL PAR IDÉNTICO<br />Y OBTEN TU PREMIO.</h2>
+        <div class="cards">
+          <div class="intentos">
+            <h1 id="numIntentos" class="f1">2</h1>
+            <h3 class="f1">INTENTOS</h3>
+          </div>
+          <div class="player">
+          
+          </div>
+          <div class="c"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,539 @@
+body, html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	background-color: #000;
+}
+
+/* Short fonts */
+.f1 { 
+	font-family: 'BigNoodleTitling'; 
+	letter-spacing: 1px;
+}
+.f2 { font-family: 'Futura Std'; }
+
+.web {
+	width: 100%;
+	max-width: 1024px;
+	height: 768px;
+	background: url(../images/bg5.jpg) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-size: 13px;
+	margin: auto;
+	overflow: hidden;
+}
+.web a { text-decoration: none; }
+
+
+.web aside {
+	width: 33%;
+	max-width: 500px;
+	text-align: center;
+	float: left;
+}
+.web aside .side {
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.web aside .side img, .comenzar-in-1 img {
+	max-width: 100%;
+	display: inline-block;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.web aside .side h2, .web .comenzar-in-1 h2 {
+	font-size: 28px;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	color: #825A2F;
+	font-weight: normal;
+}
+.web aside .side h3, .web .comenzar-in-1 h3 {
+	font-size: 22px;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	color: #A6733C;
+	font-weight: normal;
+}
+.web aside .side p {
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-weight: bold;
+}
+.web .cover {
+	background-color: rgba(0,0,0,0.85);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 150;
+}
+
+.web .content {
+	position: relative;
+	float: left;
+	margin-top: 10px;
+	width: 70%;
+	margin-left: 24%;
+	text-align: center;
+}
+.web .content .sombra {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,0.58);
+	z-index: 100;
+}
+.web aside .sombron {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,0.58);
+	z-index: 100;
+}
+.web .content .locker {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: transparent;
+	z-index: 100;
+}
+.web .content .game, .web .content .thecollect {
+	display: inline-block;
+	padding-top: 15px;
+}
+
+.button-guante { 
+	background-color: #825A2F;
+	color: #FFF;
+	font-size: 28px;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	letter-spacing: 2px;
+}
+.button-guante2 { 
+	background-color: #3c7338;
+	color: #85c65d;
+	font-size: 32px;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	letter-spacing: 2px;
+}
+
+.regbox {
+	position: absolute;
+	z-index: 300;
+	width: 50vw;
+	min-height: 60vh;
+	background-color: #825A2F;
+	border-radius: 30px;
+	border: 0;
+	text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    color: #85c65d;
+}
+.regbox .in {
+	padding: 30px;
+}
+
+.campo { width: 100%; margin-top: 15px; margin-bottom: 15px; }
+.campo label.normal { width: 140px; float: left; font-size: 25px; line-height: 35px; text-align: left; }
+.campo .inner { 
+	width: calc(100% - 140px); 
+	float: right; 
+	text-align:left; 
+	font-size: 25px;
+}
+.campo .check label {
+	font-weight: 300;
+	font-family: 'Futura Std';
+	font-size: 15px;
+	color: #FFF;
+}
+.campo .check label a {
+	color: #85c65d;
+	text-decoration: underline;
+}
+.reg-titulo {
+	color: #85c65d;
+	font-size: 40px;
+	letter-spacing: 3px;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: auto;
+}
+.input { 
+	background-color: #FFF; 
+	font-size: 25px;
+	color: #825A2F; 
+	text-transform: uppercase; 
+	width: calc(100% - 10px); 
+	padding: 5px;
+	border:0;
+	outline: 0;
+	font-family: 'BigNoodleTitling'; 
+	letter-spacing: 1px;
+}
+.input_rut { 
+	background-color: #FFF; 
+	font-size: 25px;
+	color: #825A2F; 
+	text-transform: uppercase; 
+	width: calc(100% - 100px); 
+	padding: 5px;
+	border:0;
+	outline: 0;
+	max-width: 150px;
+	font-family: 'BigNoodleTitling'; 
+	letter-spacing: 1px;
+}
+.input_dv { 
+	text-align: center;
+	background-color: #FFF; 
+	font-size: 25px;
+	color: #825A2F; 
+	text-transform: uppercase; 
+	width: 40px; 
+	padding: 5px;
+	border:0;
+	outline: 0;
+	font-family: 'BigNoodleTitling'; 
+	letter-spacing: 1px;
+}
+
+.message {
+	position: absolute;
+	z-index: 300;
+	padding: 50px;
+	background-color: #FFF;
+	border-radius: 50px;
+	border: 5px solid #67b050;
+	text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+}
+.message.in {
+	padding: 20px;
+	color: #825A2F;
+}
+.message .in img.icon {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.message .no {
+	font-size: 90px;
+	line-height: 75px;
+	margin:0;
+	padding:0;
+	font-weight: normal;
+}
+.message .sub {
+	font-size: 30px;
+	margin:0;
+	margin-bottom: 25px;
+	padding:0;
+	font-weight: normal;
+}
+.message .sub img {
+	max-width: 100px;
+	height: auto;
+}
+.share_fb {
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	cursor: pointer;
+	max-width: 200px;
+	height: auto;
+	display: block;
+}
+/* Definicion del memorice */
+.game, .thecollect {
+	width: 100%;
+	/*max-width: 800px;*/
+	text-align: left;
+}
+.game h1, .thecollect h1 {
+	font-size: 50px;
+	color: #d6c460;
+	margin:0;
+	padding:0;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.game h2, .thecollect h2 {
+	font-size: 28px;
+	color: #9fbe56;
+	margin:0;
+	padding:0;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.cards { 
+	position: relative;
+	margin-top: 20px; 
+	max-width: 665px;
+	width: 100%;
+}
+.card-in {
+	width: 135px;
+    height: 135px;
+    float: left;
+    text-align: center;
+    margin-bottom: 15px;
+    perspective: 1000px;
+    margin-right: 20px;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+}
+.card figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+.card figure img { 
+	max-width: 100%; height: auto; 
+    border: 3px solid #3c7338;
+    border-radius: 20px;
+}
+.card .front {
+
+}
+.card .back {
+  transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -webkit-transform: rotateY( 180deg );
+}
+.card.flipped {
+  transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -webkit-transform: rotateY( 180deg );
+}
+.intentos {
+	position: absolute;
+	top: 0;
+	right: -110px;
+	border-radius: 24px;
+	width: 99px;
+	height: 99px;
+	background-color: #3c7338;
+	z-index: 10;
+}
+.intentos h1 {
+	margin:0;
+	padding:0;
+	font-size: 60px;
+	text-align: center;
+	color: #FFF;
+}
+.intentos h3 {
+	margin:0;
+	padding:0;
+	font-size: 22px;
+	line-height: 15px;
+	text-align: center;
+	color: #FFF;
+	font-weight: normal;
+}
+.web .c { clear: both; }
+.web aside .side .rrss {
+	margin-top: 20px;
+	text-align: center;
+}
+.web aside .side .rrss a:hover { opacity: 0.5; }
+
+
+.boton_comenzar {
+	font-size: 25px;
+	margin: auto;
+	padding: 10px;
+/*
+-webkit-box-shadow: 0px 0px 37px 5px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 0px 37px 5px rgba(0,0,0,0.3);
+box-shadow: 0px 0px 37px 5px rgba(0,0,0,0.3);
+*/
+}
+.comenzar-in {
+	position: relative;
+}
+.comenzar-in-1 {
+	float:left;
+	width: 30%;
+	max-width: 250px;
+	text-align: center;
+}
+.comenzar-in-2 {
+	float:right;
+	width: 70%;
+	max-width: 600px;
+	font-size: 25px;
+	margin: auto;
+}
+
+.comenzar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 800px;
+  text-align: center;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: 2500;
+  border: 2px solid #825A2F;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #F9ECDC;
+}
+.boton_coleccion {
+  max-width: 100%;
+}
+.coleccion { 
+	width: 22%;
+}
+.error {
+	background-color: #ffcfcf !important;
+	color: #FF0000 !important;
+}
+.msg_error { display: none; color: #e9ff00; font-weight: bold; text-align: right; font-size: 14px;}
+input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 22px;
+  width: 30px;
+}
+
+input[type=checkbox] + label:before { content: "\f096"; } /* unchecked icon */
+input[type=checkbox] + label:before { letter-spacing: 10px; } /* space between checkbox and label */
+
+input[type=checkbox]:checked + label:before { content: "\f046"; } /* checked icon */
+input[type=checkbox]:checked + label:before { letter-spacing: 5px; } /* allow space for check mark */
+
+/* RESPONSIVE SETTINGS */
+@media only screen and (max-width: 950px) {
+	.intentos {
+		position: relative;
+		width: 100%;
+		border-radius: 0;
+		right: initial;
+		left: initial;
+		margin-bottom: 20px;
+		text-align: center;
+		height: auto;
+		padding: 8px;
+	}
+	.intentos h1 { font-size: 30px; display: inline; }
+	.intentos h3 { font-size: 30px; display: inline; }
+}
+@media only screen and (max-width: 700px) {
+	.web aside { width: 100%; max-width: 100%; }
+	.web aside .side { text-align: center; }
+	.web aside .side img { 
+		margin-left:auto; 
+		margin-right:auto; 
+		display:block; 
+	}
+	.web .content { width: 100%; }
+	.play { 
+		text-align: center;
+	}
+	.card-in {
+		width: 30vw;
+	    display: inline-block;
+	    float: initial;
+	    margin-right: 5px;
+	    margin-bottom: 0px;
+	    height: 32vw;
+	}
+	.web aside .side .rrss {
+		 text-align: center;
+	}
+	.web aside .side .rrss img {
+		display: inline-block;
+	}
+	.regbox {
+		position: relative;
+		z-index: 300;
+		width: 100vw;
+		background-color: #825A2F;
+		border-radius: 0px;
+	    left: initial;
+	    top: initial;
+	    transform: initial;
+	    -webkit-transform: initial;
+	    -moz-transform: initial;
+	    color: #85c65d;
+	    float: right;
+	}
+	.regbox .in { padding: 10px; padding-bottom: 30px; }
+	.campo label.normal { width: 100px; }
+	.message {
+		width: calc(100vw - 10px);
+		position: fixed;
+		z-index: 3000;
+		padding: 10px;
+	}
+	.web .cover {
+		position: fixed;
+	}
+
+	.web .comenzar {
+		min-width: calc(100% - 4px);
+	}
+	.web .comenzar-in-1 {
+		float: initial;
+		margin:auto;
+	}
+	.web .comenzar-in-1, .web .comenzar-in-2 {
+		float: initial;
+		width: 100%;
+		margin:auto;
+	}
+	.campo label.normal {
+		text-align: right;
+	}
+}
+
+@media only screen and (min-width: 1200px) { 
+	/**.web .content {
+		float: left;
+		max-width: 900px;
+	}*/
+	.messages, .regbox {
+		max-width: 600px;
+	}
+
+}

@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.sqm.game" android-packageName="com.sqm.game" ios-CFBundleIdentifier="com.abastible.pedidos" version="2.5.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Juego SQM</name>
+    <description>
+        Juego SQM
+    </description>
+    <author email="rosses@blanco-brand.com" href="http://www.sqm.cl">
+        Juego SQM
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" />
+    <plugin name="org.apache.cordova.geolocation"/>
+    <plugin name="org.apache.cordova.inappbrowser"/>
+    <plugin name="org.apache.cordova.dialogs"/>
+
+    <plugin name="cordova-plugin-device"/>
+    <plugin name="cordova-plugin-splashscreen"/>
+    <plugin name="cordova-plugin-statusbar" />
+    <plugin name="cordova-plugin-settings-hook" />
+    <plugin name="cordova-custom-config" />
+    <plugin name="cordova-plugin-inappbrowser" />
+    <plugin name="cordova-plugin-appavailability" source="npm" />
+
+    <preference name="fullscreen" value="false" />  <!-- shkrink resize for android -->
+    <preference name="webviewbounce" value="false"/>
+    <preference name="UIWebViewBounce" value="false"/>
+    <!-- <preference name="DisallowOverscroll" value="true"/> -->
+
+    <!-- Splashscreen full -->
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+
+    <!--disable android -->
+    <preference name="SplashScreenDelay" value="0" />
+    <preference name="SplashScreen" value="none" />
+
+    <!-- splash off IOS -->
+    <preference name="FadeSplashScreen" value="false"/>
+    <preference name="FadeSplashScreenDuration" value="0"/>
+
+    <preference name="android-minSdkVersion" value="14"/>
+    <preference name="BackupWebStorage" value="none"/>
+    <preference name="permissions" value="none"/>
+    <preference name="Orientation" value="landscape" />
+
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    <preference name="android-build-tool" value="gradle" />
+
+    <preference name="exit-on-suspend" value="false"/>
+    <preference name="android-windowSoftInputMode" value="stateHidden|adjustResize" />
+    <preference name="KeyboardShrinksView" value="true" />
+
+    <access origin="*" />
+    <access origin="mailto:*" launch-external="yes"/>
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="whatsapp://*"/>
+    <allow-intent href="whatsapp:*"/>
+    <allow-intent href="fb:*"/>
+    <allow-intent href="fb://*"/>
+    <allow-intent href="twitter:*"/>
+    <allow-intent href="twitter://*"/>
+    <allow-intent href="smsto:*"/>
+    <allow-intent href="smsto://*"/>
+    <platform name="android">
+        <preference name="android-manifest/application/activity[@android:name='noHistory']" delete="true" />
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+
+    </platform>
+
+</widget>
